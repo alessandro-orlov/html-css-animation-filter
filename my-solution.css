@@ -99,8 +99,9 @@ filter: grayscale(50%) sepia(30%);
 }
 
 @keyframes rotate {
-    0% { transform: rotate(1turn); }
+  0% {transform: rotate(1turn);}
 }
+
 /* end exercise 10 */
 
 /* begin exercise 11 */
@@ -114,7 +115,104 @@ filter: grayscale(50%) sepia(30%);
   0% { transform: rotate(0%);}
 
   75% { transform: rotate(270deg);}
+}
+/* end exercise 11 */
 
+/* begin exercise 12 */
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: top-move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes top-move {
+  0% {left: 10%;}
+  50% {left: 70%;}
 }
 
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: bottom-move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes bottom-move {
+  0% {right: 20%;}
+  50% {right: 60%;}
+}
 /* end exercise 12 */
+
+/* begin exercise 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: top-white;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+@keyframes top-white {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  30% {
+    top: -10px;
+    left: 80%;
+  }
+
+  50% {
+    top: 60px;
+    left: 90%;
+  }
+
+  70% {
+    top: 60px;
+    left: -10%;
+  }
+
+  90% {
+    top: -10px;
+    left: -10%;
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: bottom-white;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+@keyframes bottom-white {
+  0% {
+    bottom: -10%;
+    right: 20%;
+  }
+
+  30% {
+    bottom: -10%;
+    right: 90%;
+  }
+
+  50% {
+    bottom: 90%;
+    right: 90%;
+  }
+
+  70% {
+    bottom: 90%;
+    right: -10%;
+  }
+
+  90% {
+    bottom: -10%;
+    right: -10%;
+  }
+
+  100% {
+    bottom: -10%;
+    right: 20%;
+  }
+}
+/* end exercise 13 */
