@@ -1,5 +1,5 @@
 
-/* begin esercizio 1 */
+/* begin exercise 1 */
 .ex-1-square {
   transition: background-color  2s;
 }
@@ -7,18 +7,18 @@
 .ex-1-square:hover {
 background-color: red;
 }
-/* end esercizio 1 */
+/* end exercise 1 */
 
-/* begin esercizio 2 */
+/* begin exercise 2 */
 .ex-2-square {
   transition: width 2s;
 }
 .ex-2-square:active {
   width: 100%;
 }
-/* end esercizio 2 */
+/* end exercise 2 */
 
-/* begin esercizio 3 */
+/* begin exercise 3 */
 .ex-3-square {
   transition: 1s;
 }
@@ -26,9 +26,9 @@ background-color: red;
 .ex-3-square:hover {
   border-radius: 50%;
 }
-/* end esercizio 3 */
+/* end exercise 3 */
 
-/* begin esercizio 4 */
+/* begin exercise 4 */
 .ex-4-square {
   transition: 1s;
 }
@@ -36,9 +36,9 @@ background-color: red;
 .ex-4-square:hover {
   opacity:  0;
 }
-/* end esercizio 4 */
+/* end exercise 4 */
 
-/* begin esercizio 5 */
+/* begin exercise 5 */
 .ex-5-square {
   transition: 1s;
 }
@@ -50,4 +50,71 @@ background-color: red;
 .ex-5-square:active {
   transform: scale(0.5);
 }
-/* end esercizio 5 */
+/* end exercise 5 */
+
+/* begin exercise 6 */
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+/* end exercise 6 */
+
+/* begin exercise 7 */
+.ex-7-img {
+  transition: 1s;
+}
+.ex-7-img:hover {
+  filter: contrast(50%) sepia(100%);
+}
+/* end exercise 7 */
+
+/* begin exercise 8 */
+.ex-8-img {
+  transition: 1s;
+}
+
+.ex-8-img:hover {
+border-radius: 15px;
+filter: grayscale(50%) sepia(30%);
+}
+/* end exercise 8 */
+
+/* begin exercise 9 */
+.ex-9-img {
+  transition: 1s;
+}
+
+.ex-9-img:hover {
+  border-radius: 15px;
+  transform: scale(1.5);
+  filter: grayscale(50%) sepia(30%);
+}
+/* end exercise 9 */
+
+/* begin exercise 10 */
+.ex-10-icon {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(1turn); }
+}
+/* end exercise 10 */
+
+/* begin exercise 11 */
+.ex-11-icon:hover  {
+  animation-name: rotate-2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-2 {
+  0% { transform: rotate(0%);}
+
+  75% { transform: rotate(270deg);}
+
+}
+
+/* end exercise 12 */
