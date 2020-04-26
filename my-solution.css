@@ -202,3 +202,64 @@ filter: grayscale(50%) sepia(30%);
   }
 }
 /* end exercise 13 */
+
+/* Bonus Exercise */
+.animated-button {
+  display: inline-block;
+  position: relative;
+}
+
+.animated-button img.gear-big {
+  position: absolute;
+  top:15px;
+  right: 35px;
+  width: 40px;
+}
+.animated-button img.gear-small {
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  width: 36px;
+  transform: rotate(-5deg);
+}
+
+.animated-button:hover img.gear-big {
+  animation-name: gear-big;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 0.06s;
+}
+
+@keyframes gear-big {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.animated-button:hover img.gear-small {
+  animation-name: gear-small;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
+  animation-duration: 2s;
+  animation-delay: 0.01s;
+
+}
+
+@keyframes gear-small {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+.animated-button a {
+  text-align: center;
+  display: inline-block;
+  width: 240px;
+  height: 80px;
+  color: #555;
+  font-size: 22px;
+  text-decoration: none;
+  line-height: 80px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+/*END Bonus Exercise */
